@@ -12,7 +12,7 @@ network:
 datasets:
     src:
         type: 'rotate'
-        name: ['photo', 'cartoon']
+        name: ['VOC2007', 'clipart']
         batch_size: 128
         num_workers: 4
         limit: false
@@ -30,7 +30,7 @@ datasets:
             std: [0.229, 0.224, 0.225]
     tar:
         type: 'rotate'
-        name: 'photo'
+        name: 'VOC2007'
         split: train
         batch_size: 128
         num_workers: 4
@@ -49,7 +49,7 @@ datasets:
 
     test:
         type: 'rotate'
-        name: 'cartoon'
+        name: 'clipart'
         split: test
         batch_size: 128
         num_workers: 4
